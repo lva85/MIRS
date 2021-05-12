@@ -91,7 +91,7 @@ function cal_MIRS () {
 						score = score.toPrecision(4)
 						
 						phrase = "<h2> This is currently for research purpose only !</h2>"
-						phrase = phrase + '<h4> MIRS = <strong>' + score + ', Median MIRS of the analyzed data: <strong>' + scoreM + '</strong></h4>' ;
+						phrase = phrase + '<h4> MIRS = <strong>' + score + ', Median MIRS score in our research is: <strong>' + scoreM + '</strong></h4>' ;
 					
 						if (score - scoreM > 0){
 							phrase = phrase + '<h4><strong>High MIRS</strong> might be benefit from the Chemotherapy:</h4>' ;
