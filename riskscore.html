@@ -1,0 +1,252 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>MIRS for Breast Cancer</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		
+		<!--<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">-->
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/flexslider.css">
+		<link rel="stylesheet" href="css/styles.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+		<script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+		<link rel="stylesheet" href="assets/css/main.css" />
+		
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+
+							
+
+							<!-- Banner -->
+								<section id="banner">
+									<div class="content">
+										<header>
+											<h2>MIRS Score</h2>
+										</header>
+										<p style="text-align:justify; text-justify:inter-ideograph;">MIRS Score: A Metastatic and Immunogenomic Risk Score. 
+										We optimized the weights for each gene with the neuron network in the training TCGA data. The metastatic and immunogenomic risk score (MIRS) for each patient was built by summation of Weight × I_({protective or dangerous gene}) for all 12 genes.</p>
+									</div>
+								</section>
+
+								<section >
+									<div >
+										<div class="row">
+											<div class="col-md-11">
+												<div class="flexslider">
+													<ul class="slides">
+														<li>
+															<div class="avatar"><img src="images/MIRS_1.png" ></div>
+														</li>
+														<li>
+															<div class="avatar"><img src="images/MIRS_2.png"></div>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+								</section>
+								
+							<!-- Table -->
+							<h4>Data Summary</h4>
+							<div class="table-wrapper">
+								<table>
+									<thead>
+										<tr>
+											<th>Description</th>
+											<th>Category</th>
+											<th>Sample Size</th>
+											<th>MIRS Median</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td >Breast Cancer cohort from TCGA</td>
+											<td >NGS</td>
+											<td >1100</td>
+											<td>3.530</td>
+										</tr>
+										<tr>
+											<td>Breast Cancer cohort from GSE86166</td>
+											<td>Microarray</td>
+											<td>366</td>
+											<td>3.058</td>
+										</tr>
+										<tr>
+											<td>Breast Cancer cohort from GSE96058</td>
+											<td>NGS</td>
+											<td>3273</td>
+											<td>3.502</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							
+							<h4>The 12 prognostic genes for calculating the risk score in TCGA data</h4>
+							<div class="table-wrapper">
+								<table>
+									<thead>
+										<tr>
+											<th>Gene Name</th>
+											<th>Category</th>
+											<th>Gene expression (high)</th>
+											<th>Gene expression (low)</th>
+											<th>Weight</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>APOA5</td>
+											<td>Dangerous</td>
+											<td>1</td>
+											<td>0</td>
+											<td>0.369</td>
+										</tr>
+										<tr>
+											<td>FAM9C</td>
+											<td>Dangerous</td>
+											<td>1</td>
+											<td>0</td>
+											<td>0.340</td>
+										</tr>
+										<tr>
+											<td>IVL</td>
+											<td>Dangerous</td>
+											<td>1</td>
+											<td>0</td>
+											<td>0.888</td>
+										</tr>
+										<tr>
+											<td>PAGE5</td>
+											<td>Dangerous</td>
+											<td>1</td>
+											<td>0</td>
+											<td>0.237</td>
+										</tr>
+										<tr>
+											<td>CACNA1E</td>
+											<td>Protective</td>
+											<td>0</td>
+											<td>1</td>
+											<td>0.580</td>
+										</tr>
+										<tr>
+											<td>CCL25</td>
+											<td>Protective</td>
+											<td>0</td>
+											<td>1</td>
+											<td>0.060</td>
+										</tr>
+										<tr>
+											<td>CD1A</td>
+											<td>Protective</td>
+											<td>0</td>
+											<td>1</td>
+											<td>0.656</td>
+										</tr>
+										<tr>
+											<td>CD1B</td>
+											<td>Protective</td>
+											<td>0</td>
+											<td>1</td>
+											<td>0.358</td>
+										</tr>
+										<tr>
+											<td>GPR55</td>
+											<td>Protective</td>
+											<td>0</td>
+											<td>1</td>
+											<td>0.715</td>
+										</tr>
+										<tr>
+											<td>LAX1</td>
+											<td>Protective</td>
+											<td>0</td>
+											<td>1</td>
+											<td>0.561</td>
+										</tr>
+										<tr>
+											<td>TNFRSF8</td>
+											<td>Protective</td>
+											<td>0</td>
+											<td>1</td>
+											<td>0.477</td>
+										</tr>
+										<tr>
+											<td>WNT10A</td>
+											<td>Protective</td>
+											<td>0</td>
+											<td>1</td>
+											<td>0.743</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							
+						</div>
+						
+					</div>
+
+				<!-- Sidebar -->
+					<div id="sidebar">
+						<div class="inner">
+
+							<!-- Search -->
+								<section id="search" class="alt">
+									<span class="image object">
+										<a href="index.html"><img src="images/logo.png" alt="" height="100" width="290"/></a>
+									</span>
+								</section>
+
+							<!-- Menu -->
+								<nav id="menu">
+									<header class="major">
+										<h2>MIRS FOR BREAST CANCER</h2>
+									</header>
+									<ul>
+										<li><a href="index.html">Home</a></li>
+										<li><a href="guidlines.html">Tutorial</a></li>
+										<li><a href="genepanel.html">Gene Panel</a></li>
+										<li><a href="riskscore.html">MIRS Score</a></li>
+										<li><a href="calculation.html">Go to predict</a></li>
+										<li>
+											<span class="opener">More about MIRS</span>
+											<ul>
+												<li><a href="therapeutic_benefits.html">Therapeutic Benefits</a></li>
+												<li><a href="comparison_with_previous_model.html">Comparison with previous model</a></li>
+												<li><a href="publication.html">Publication</a></li>
+											</ul>
+										</li>
+										<li><a href="history.html">History</a></li>
+									</ul>
+								</nav>
+
+							
+
+						</div>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			
+			<script src="js/scripts.js"></script>
+			<script src="js/jquery.flexslider-min.js"></script>
+			<script src="bower_components/jquery-waypoints/lib/jquery.waypoints.min.js"></script>
+
+	</body>
+</html>
